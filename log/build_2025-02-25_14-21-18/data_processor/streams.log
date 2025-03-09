@@ -1,0 +1,22 @@
+[1.820s] Invoking command in '/home/charles/ros2_ws/build/data_processor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/data_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/data_processor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/charles/ros2_ws/build/data_processor/build --no-deps symlink_data
+[2.304s] running develop
+[2.686s] running egg_info
+[2.687s] creating data_processor.egg-info
+[2.725s] writing data_processor.egg-info/PKG-INFO
+[2.726s] writing dependency_links to data_processor.egg-info/dependency_links.txt
+[2.726s] writing requirements to data_processor.egg-info/requires.txt
+[2.726s] writing top-level names to data_processor.egg-info/top_level.txt
+[2.726s] writing manifest file 'data_processor.egg-info/SOURCES.txt'
+[2.805s] reading manifest file 'data_processor.egg-info/SOURCES.txt'
+[2.807s] writing manifest file 'data_processor.egg-info/SOURCES.txt'
+[2.844s] running build_ext
+[2.844s] Creating /home/charles/ros2_ws/install/data_processor/lib/python3.12/site-packages/data-processor.egg-link (link to .)
+[2.845s] 
+[2.845s] Installed /home/charles/ros2_ws/build/data_processor
+[2.846s] running symlink_data
+[2.846s] creating /home/charles/ros2_ws/install/data_processor/share/ament_index
+[2.846s] creating /home/charles/ros2_ws/install/data_processor/share/ament_index/resource_index
+[2.846s] creating /home/charles/ros2_ws/install/data_processor/share/ament_index/resource_index/packages
+[2.846s] symbolically linking /home/charles/ros2_ws/build/data_processor/resource/data_processor -> /home/charles/ros2_ws/install/data_processor/share/ament_index/resource_index/packages
+[2.846s] symbolically linking /home/charles/ros2_ws/build/data_processor/package.xml -> /home/charles/ros2_ws/install/data_processor/share/data_processor
+[2.925s] Invoked command in '/home/charles/ros2_ws/build/data_processor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/data_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/data_processor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/charles/ros2_ws/build/data_processor/build --no-deps symlink_data

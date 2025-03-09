@@ -1,0 +1,16 @@
+[1.574s] Invoking command in '/home/charles/ros2_ws/src/raw_data_publisher': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/raw_data_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/raw_data_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/raw_data_publisher build --build-base /home/charles/ros2_ws/build/raw_data_publisher/build install --record /home/charles/ros2_ws/build/raw_data_publisher/install.log --single-version-externally-managed install_data
+[1.897s] running egg_info
+[1.921s] writing ../../build/raw_data_publisher/raw_data_publisher.egg-info/PKG-INFO
+[1.922s] writing dependency_links to ../../build/raw_data_publisher/raw_data_publisher.egg-info/dependency_links.txt
+[1.922s] writing entry points to ../../build/raw_data_publisher/raw_data_publisher.egg-info/entry_points.txt
+[1.922s] writing requirements to ../../build/raw_data_publisher/raw_data_publisher.egg-info/requires.txt
+[1.922s] writing top-level names to ../../build/raw_data_publisher/raw_data_publisher.egg-info/top_level.txt
+[1.970s] reading manifest file '../../build/raw_data_publisher/raw_data_publisher.egg-info/SOURCES.txt'
+[1.971s] writing manifest file '../../build/raw_data_publisher/raw_data_publisher.egg-info/SOURCES.txt'
+[1.971s] running build
+[1.971s] running build_py
+[1.972s] running install
+[1.979s] running install_lib
+[2.006s] running install_data
+[2.006s] error: can't copy 'scripts/imu_publisher.py': doesn't exist or not a regular file
+[2.032s] Invoked command in '/home/charles/ros2_ws/src/raw_data_publisher' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/raw_data_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/raw_data_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/raw_data_publisher build --build-base /home/charles/ros2_ws/build/raw_data_publisher/build install --record /home/charles/ros2_ws/build/raw_data_publisher/install.log --single-version-externally-managed install_data

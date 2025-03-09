@@ -1,0 +1,22 @@
+[1.932s] Invoking command in '/home/charles/ros2_ws/build/brain': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/charles/ros2_ws/build/brain/build --no-deps symlink_data
+[2.337s] running develop
+[2.644s] running egg_info
+[2.644s] creating brain.egg-info
+[2.678s] writing brain.egg-info/PKG-INFO
+[2.679s] writing dependency_links to brain.egg-info/dependency_links.txt
+[2.679s] writing requirements to brain.egg-info/requires.txt
+[2.680s] writing top-level names to brain.egg-info/top_level.txt
+[2.680s] writing manifest file 'brain.egg-info/SOURCES.txt'
+[2.748s] reading manifest file 'brain.egg-info/SOURCES.txt'
+[2.749s] writing manifest file 'brain.egg-info/SOURCES.txt'
+[2.781s] running build_ext
+[2.782s] Creating /home/charles/ros2_ws/install/brain/lib/python3.12/site-packages/brain.egg-link (link to .)
+[2.782s] 
+[2.782s] Installed /home/charles/ros2_ws/build/brain
+[2.782s] running symlink_data
+[2.782s] creating /home/charles/ros2_ws/install/brain/share/ament_index
+[2.782s] creating /home/charles/ros2_ws/install/brain/share/ament_index/resource_index
+[2.782s] creating /home/charles/ros2_ws/install/brain/share/ament_index/resource_index/packages
+[2.783s] symbolically linking /home/charles/ros2_ws/build/brain/resource/brain -> /home/charles/ros2_ws/install/brain/share/ament_index/resource_index/packages
+[2.783s] symbolically linking /home/charles/ros2_ws/build/brain/package.xml -> /home/charles/ros2_ws/install/brain/share/brain
+[2.849s] Invoked command in '/home/charles/ros2_ws/build/brain' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/charles/ros2_ws/build/brain/build --no-deps symlink_data

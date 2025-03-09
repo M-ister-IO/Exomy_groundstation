@@ -1,0 +1,36 @@
+[1.673s] Invoking command in '/home/charles/ros2_ws/build/raw_data_publisher': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/raw_data_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/raw_data_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/charles/ros2_ws/build/raw_data_publisher/build
+[2.089s] running develop
+[2.377s] Removing /home/charles/ros2_ws/install/raw_data_publisher/lib/python3.12/site-packages/raw-data-publisher.egg-link (link to .)
+[2.430s] Invoked command in '/home/charles/ros2_ws/build/raw_data_publisher' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/raw_data_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/raw_data_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/charles/ros2_ws/build/raw_data_publisher/build
+[2.432s] Invoking command in '/home/charles/ros2_ws/src/raw_data_publisher': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/raw_data_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/raw_data_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/raw_data_publisher build --build-base /home/charles/ros2_ws/build/raw_data_publisher/build install --record /home/charles/ros2_ws/build/raw_data_publisher/install.log --single-version-externally-managed install_data --force
+[2.885s] running egg_info
+[2.908s] writing ../../build/raw_data_publisher/raw_data_publisher.egg-info/PKG-INFO
+[2.909s] writing dependency_links to ../../build/raw_data_publisher/raw_data_publisher.egg-info/dependency_links.txt
+[2.909s] writing entry points to ../../build/raw_data_publisher/raw_data_publisher.egg-info/entry_points.txt
+[2.909s] writing requirements to ../../build/raw_data_publisher/raw_data_publisher.egg-info/requires.txt
+[2.909s] writing top-level names to ../../build/raw_data_publisher/raw_data_publisher.egg-info/top_level.txt
+[2.957s] reading manifest file '../../build/raw_data_publisher/raw_data_publisher.egg-info/SOURCES.txt'
+[2.958s] writing manifest file '../../build/raw_data_publisher/raw_data_publisher.egg-info/SOURCES.txt'
+[2.958s] running build
+[2.958s] running build_py
+[2.959s] creating /home/charles/ros2_ws/build/raw_data_publisher/build
+[2.959s] creating /home/charles/ros2_ws/build/raw_data_publisher/build/lib
+[2.959s] creating /home/charles/ros2_ws/build/raw_data_publisher/build/lib/raw_data_publisher
+[2.959s] copying raw_data_publisher/__init__.py -> /home/charles/ros2_ws/build/raw_data_publisher/build/lib/raw_data_publisher
+[2.959s] running install
+[2.967s] running install_lib
+[2.991s] creating /home/charles/ros2_ws/install/raw_data_publisher/lib/python3.12/site-packages/raw_data_publisher
+[2.991s] copying /home/charles/ros2_ws/build/raw_data_publisher/build/lib/raw_data_publisher/__init__.py -> /home/charles/ros2_ws/install/raw_data_publisher/lib/python3.12/site-packages/raw_data_publisher
+[2.991s] byte-compiling /home/charles/ros2_ws/install/raw_data_publisher/lib/python3.12/site-packages/raw_data_publisher/__init__.py to __init__.cpython-312.pyc
+[2.992s] running install_data
+[2.992s] copying resource/raw_data_publisher -> /home/charles/ros2_ws/install/raw_data_publisher/share/ament_index/resource_index/packages
+[2.992s] copying package.xml -> /home/charles/ros2_ws/install/raw_data_publisher/share/raw_data_publisher
+[2.992s] copying scripts/imu_publisher.py -> /home/charles/ros2_ws/install/raw_data_publisher/share/raw_data_publisher/scripts
+[2.992s] copying scripts/tof_publisher.py -> /home/charles/ros2_ws/install/raw_data_publisher/share/raw_data_publisher/scripts
+[2.993s] running install_egg_info
+[3.020s] Copying ../../build/raw_data_publisher/raw_data_publisher.egg-info to /home/charles/ros2_ws/install/raw_data_publisher/lib/python3.12/site-packages/raw_data_publisher-0.0.0-py3.12.egg-info
+[3.021s] running install_scripts
+[3.186s] Installing imu_publisher script to /home/charles/ros2_ws/install/raw_data_publisher/lib/raw_data_publisher
+[3.186s] Installing tof_publisher script to /home/charles/ros2_ws/install/raw_data_publisher/lib/raw_data_publisher
+[3.187s] writing list of installed files to '/home/charles/ros2_ws/build/raw_data_publisher/install.log'
+[3.248s] Invoked command in '/home/charles/ros2_ws/src/raw_data_publisher' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/raw_data_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/raw_data_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/raw_data_publisher build --build-base /home/charles/ros2_ws/build/raw_data_publisher/build install --record /home/charles/ros2_ws/build/raw_data_publisher/install.log --single-version-externally-managed install_data --force

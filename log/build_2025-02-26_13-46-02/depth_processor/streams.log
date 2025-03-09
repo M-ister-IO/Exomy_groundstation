@@ -1,0 +1,24 @@
+[2.473s] Invoking command in '/home/charles/ros2_ws/src/depth_processor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/depth_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/depth_processor build --build-base /home/charles/ros2_ws/build/depth_processor/build install --record /home/charles/ros2_ws/build/depth_processor/install.log --single-version-externally-managed install_data
+[3.682s] running egg_info
+[3.789s] writing ../../build/depth_processor/depth_processor.egg-info/PKG-INFO
+[3.789s] writing dependency_links to ../../build/depth_processor/depth_processor.egg-info/dependency_links.txt
+[3.790s] writing entry points to ../../build/depth_processor/depth_processor.egg-info/entry_points.txt
+[3.791s] writing requirements to ../../build/depth_processor/depth_processor.egg-info/requires.txt
+[3.793s] writing top-level names to ../../build/depth_processor/depth_processor.egg-info/top_level.txt
+[4.018s] reading manifest file '../../build/depth_processor/depth_processor.egg-info/SOURCES.txt'
+[4.024s] writing manifest file '../../build/depth_processor/depth_processor.egg-info/SOURCES.txt'
+[4.025s] running build
+[4.025s] running build_py
+[4.026s] copying depth_processor/scripts/process_depth.py -> /home/charles/ros2_ws/build/depth_processor/build/lib/depth_processor/scripts
+[4.026s] running install
+[4.064s] running install_lib
+[4.188s] copying /home/charles/ros2_ws/build/depth_processor/build/lib/depth_processor/scripts/process_depth.py -> /home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages/depth_processor/scripts
+[4.191s] byte-compiling /home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages/depth_processor/scripts/process_depth.py to process_depth.cpython-312.pyc
+[4.195s] running install_data
+[4.196s] running install_egg_info
+[4.309s] removing '/home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages/depth_processor-0.0.0-py3.12.egg-info' (and everything under it)
+[4.315s] Copying ../../build/depth_processor/depth_processor.egg-info to /home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages/depth_processor-0.0.0-py3.12.egg-info
+[4.317s] running install_scripts
+[5.011s] Installing process_depth script to /home/charles/ros2_ws/install/depth_processor/lib/depth_processor
+[5.012s] writing list of installed files to '/home/charles/ros2_ws/build/depth_processor/install.log'
+[5.133s] Invoked command in '/home/charles/ros2_ws/src/depth_processor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/depth_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/depth_processor build --build-base /home/charles/ros2_ws/build/depth_processor/build install --record /home/charles/ros2_ws/build/depth_processor/install.log --single-version-externally-managed install_data

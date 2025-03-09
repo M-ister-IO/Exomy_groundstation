@@ -1,0 +1,13 @@
+running develop
+running egg_info
+writing data_processor.egg-info/PKG-INFO
+writing dependency_links to data_processor.egg-info/dependency_links.txt
+writing requirements to data_processor.egg-info/requires.txt
+writing top-level names to data_processor.egg-info/top_level.txt
+reading manifest file 'data_processor.egg-info/SOURCES.txt'
+writing manifest file 'data_processor.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/charles/ros2_ws/install/data_processor/lib/python3.12/site-packages/data-processor.egg-link (link to .)
+
+Installed /home/charles/ros2_ws/build/data_processor
+running symlink_data

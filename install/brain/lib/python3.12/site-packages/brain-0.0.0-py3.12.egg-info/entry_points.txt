@@ -1,0 +1,3 @@
+[console_scripts]
+brain_listener = brain.scripts.brain_listener:main
+command_listener = brain.scripts.command_listener:main

@@ -1,0 +1,279 @@
+[0.121s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.121s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7c3cd987df40>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7c3cd987de50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7c3cd987de50>>)
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.169s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/charles/ros2_ws'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'colcon_pkg'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extensions ['colcon_meta']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'colcon_meta'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extensions ['ros']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'ros'
+[0.205s] DEBUG:colcon.colcon_core.package_identification:Package 'src/brain' with type 'ros.ament_python' and name 'brain'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_processor) by extensions ['ignore', 'ignore_ament_install']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_processor) by extension 'ignore'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_processor) by extension 'ignore_ament_install'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_processor) by extensions ['colcon_pkg']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_processor) by extension 'colcon_pkg'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_processor) by extensions ['colcon_meta']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_processor) by extension 'colcon_meta'
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_processor) by extensions ['ros']
+[0.206s] Level 1:colcon.colcon_core.package_identification:_identify(src/data_processor) by extension 'ros'
+[0.207s] DEBUG:colcon.colcon_core.package_identification:Package 'src/data_processor' with type 'ros.ament_python' and name 'data_processor'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_processor) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_processor) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_processor) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_processor) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_processor) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_processor) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_processor) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_processor) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/depth_processor) by extension 'ros'
+[0.208s] DEBUG:colcon.colcon_core.package_identification:Package 'src/depth_processor' with type 'ros.ament_python' and name 'depth_processor'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raw_data_publisher) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raw_data_publisher) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raw_data_publisher) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raw_data_publisher) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raw_data_publisher) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raw_data_publisher) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raw_data_publisher) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raw_data_publisher) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/raw_data_publisher) by extension 'ros'
+[0.210s] DEBUG:colcon.colcon_core.package_identification:Package 'src/raw_data_publisher' with type 'ros.ament_python' and name 'raw_data_publisher'
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.231s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.231s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.233s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/charles/ros2_ws/install
+[0.234s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_target' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_clean_cache' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_clean_first' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_force_configure' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'ament_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'catkin_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.283s] DEBUG:colcon.colcon_core.verb:Building package 'brain' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/charles/ros2_ws/build/brain', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/charles/ros2_ws/install/brain', 'merge_install': False, 'path': '/home/charles/ros2_ws/src/brain', 'symlink_install': False, 'test_result_base': None}
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'data_processor' build argument 'cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'data_processor' build argument 'cmake_target' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'data_processor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'data_processor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'data_processor' build argument 'cmake_clean_first' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'data_processor' build argument 'cmake_force_configure' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'data_processor' build argument 'ament_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'data_processor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'data_processor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.283s] DEBUG:colcon.colcon_core.verb:Building package 'data_processor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/charles/ros2_ws/build/data_processor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/charles/ros2_ws/install/data_processor', 'merge_install': False, 'path': '/home/charles/ros2_ws/src/data_processor', 'symlink_install': False, 'test_result_base': None}
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'depth_processor' build argument 'cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'depth_processor' build argument 'cmake_target' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'depth_processor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'depth_processor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'depth_processor' build argument 'cmake_clean_first' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'depth_processor' build argument 'cmake_force_configure' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'depth_processor' build argument 'ament_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'depth_processor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'depth_processor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.284s] DEBUG:colcon.colcon_core.verb:Building package 'depth_processor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/charles/ros2_ws/build/depth_processor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/charles/ros2_ws/install/depth_processor', 'merge_install': False, 'path': '/home/charles/ros2_ws/src/depth_processor', 'symlink_install': False, 'test_result_base': None}
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'raw_data_publisher' build argument 'cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'raw_data_publisher' build argument 'cmake_target' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'raw_data_publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'raw_data_publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'raw_data_publisher' build argument 'cmake_clean_first' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'raw_data_publisher' build argument 'cmake_force_configure' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'raw_data_publisher' build argument 'ament_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'raw_data_publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'raw_data_publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.284s] DEBUG:colcon.colcon_core.verb:Building package 'raw_data_publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/charles/ros2_ws/build/raw_data_publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/charles/ros2_ws/install/raw_data_publisher', 'merge_install': False, 'path': '/home/charles/ros2_ws/src/raw_data_publisher', 'symlink_install': False, 'test_result_base': None}
+[0.284s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.285s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.285s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/charles/ros2_ws/src/brain' with build type 'ament_python'
+[0.285s] Level 1:colcon.colcon_core.shell:create_environment_hook('brain', 'ament_prefix_path')
+[0.287s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.288s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/brain/share/brain/hook/ament_prefix_path.ps1'
+[0.288s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/charles/ros2_ws/install/brain/share/brain/hook/ament_prefix_path.dsv'
+[0.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/brain/share/brain/hook/ament_prefix_path.sh'
+[0.290s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.290s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.294s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/charles/ros2_ws/src/data_processor' with build type 'ament_python'
+[0.295s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_processor', 'ament_prefix_path')
+[0.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/data_processor/share/data_processor/hook/ament_prefix_path.ps1'
+[0.296s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/charles/ros2_ws/install/data_processor/share/data_processor/hook/ament_prefix_path.dsv'
+[0.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/data_processor/share/data_processor/hook/ament_prefix_path.sh'
+[0.296s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.296s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.299s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/charles/ros2_ws/src/depth_processor' with build type 'ament_python'
+[0.299s] Level 1:colcon.colcon_core.shell:create_environment_hook('depth_processor', 'ament_prefix_path')
+[0.300s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/depth_processor/share/depth_processor/hook/ament_prefix_path.ps1'
+[0.300s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/charles/ros2_ws/install/depth_processor/share/depth_processor/hook/ament_prefix_path.dsv'
+[0.300s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/depth_processor/share/depth_processor/hook/ament_prefix_path.sh'
+[0.301s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.301s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.305s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/charles/ros2_ws/src/raw_data_publisher' with build type 'ament_python'
+[0.305s] Level 1:colcon.colcon_core.shell:create_environment_hook('raw_data_publisher', 'ament_prefix_path')
+[0.305s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/raw_data_publisher/share/raw_data_publisher/hook/ament_prefix_path.ps1'
+[0.306s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/charles/ros2_ws/install/raw_data_publisher/share/raw_data_publisher/hook/ament_prefix_path.dsv'
+[0.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/raw_data_publisher/share/raw_data_publisher/hook/ament_prefix_path.sh'
+[0.308s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.308s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.569s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/charles/ros2_ws/src/brain'
+[0.569s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.569s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.825s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/charles/ros2_ws/src/data_processor'
+[0.825s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.825s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.104s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/charles/ros2_ws/src/depth_processor'
+[1.104s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.104s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.362s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'raw_data_publisher' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[1.362s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'raw_data_publisher' doesn't explicitly install the 'package.xml' file (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[1.363s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/charles/ros2_ws/src/raw_data_publisher'
+[1.363s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.363s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/charles/ros2_ws/src/data_processor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/data_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/data_processor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/data_processor build --build-base /home/charles/ros2_ws/build/data_processor/build install --record /home/charles/ros2_ws/build/data_processor/install.log --single-version-externally-managed install_data
+[2.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/charles/ros2_ws/src/depth_processor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/depth_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/depth_processor build --build-base /home/charles/ros2_ws/build/depth_processor/build install --record /home/charles/ros2_ws/build/depth_processor/install.log --single-version-externally-managed install_data
+[2.923s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/charles/ros2_ws/src/brain': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/brain build --build-base /home/charles/ros2_ws/build/brain/build install --record /home/charles/ros2_ws/build/brain/install.log --single-version-externally-managed install_data
+[2.939s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/charles/ros2_ws/src/raw_data_publisher': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/raw_data_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/raw_data_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/raw_data_publisher build --build-base /home/charles/ros2_ws/build/raw_data_publisher/build install --record /home/charles/ros2_ws/build/raw_data_publisher/install.log --single-version-externally-managed
+[5.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/charles/ros2_ws/src/depth_processor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/depth_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/depth_processor build --build-base /home/charles/ros2_ws/build/depth_processor/build install --record /home/charles/ros2_ws/build/depth_processor/install.log --single-version-externally-managed install_data
+[5.442s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/depth_processor' for CMake module files
+[5.444s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/depth_processor' for CMake config files
+[5.447s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/depth_processor/lib'
+[5.448s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/depth_processor/bin'
+[5.448s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/depth_processor/lib/pkgconfig/depth_processor.pc'
+[5.449s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages'
+[5.449s] Level 1:colcon.colcon_core.shell:create_environment_hook('depth_processor', 'pythonpath')
+[5.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/depth_processor/share/depth_processor/hook/pythonpath.ps1'
+[5.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/charles/ros2_ws/install/depth_processor/share/depth_processor/hook/pythonpath.dsv'
+[5.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/depth_processor/share/depth_processor/hook/pythonpath.sh'
+[5.457s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/depth_processor/bin'
+[5.457s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(depth_processor)
+[5.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/depth_processor/share/depth_processor/package.ps1'
+[5.462s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/charles/ros2_ws/install/depth_processor/share/depth_processor/package.dsv'
+[5.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/depth_processor/share/depth_processor/package.sh'
+[5.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/depth_processor/share/depth_processor/package.bash'
+[5.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/depth_processor/share/depth_processor/package.zsh'
+[5.478s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/charles/ros2_ws/install/depth_processor/share/colcon-core/packages/depth_processor)
+[5.536s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/data_processor' for CMake module files
+[5.537s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/charles/ros2_ws/src/data_processor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/data_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/data_processor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/data_processor build --build-base /home/charles/ros2_ws/build/data_processor/build install --record /home/charles/ros2_ws/build/data_processor/install.log --single-version-externally-managed install_data
+[5.538s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/data_processor' for CMake config files
+[5.540s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/data_processor/lib'
+[5.541s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/data_processor/bin'
+[5.541s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/data_processor/lib/pkgconfig/data_processor.pc'
+[5.542s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/data_processor/lib/python3.12/site-packages'
+[5.543s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_processor', 'pythonpath')
+[5.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/data_processor/share/data_processor/hook/pythonpath.ps1'
+[5.545s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/charles/ros2_ws/install/data_processor/share/data_processor/hook/pythonpath.dsv'
+[5.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/data_processor/share/data_processor/hook/pythonpath.sh'
+[5.550s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/data_processor/bin'
+[5.551s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(data_processor)
+[5.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/data_processor/share/data_processor/package.ps1'
+[5.554s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/charles/ros2_ws/install/data_processor/share/data_processor/package.dsv'
+[5.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/data_processor/share/data_processor/package.sh'
+[5.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/data_processor/share/data_processor/package.bash'
+[5.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/data_processor/share/data_processor/package.zsh'
+[5.560s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/charles/ros2_ws/install/data_processor/share/colcon-core/packages/data_processor)
+[5.705s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/raw_data_publisher' for CMake module files
+[5.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/charles/ros2_ws/src/raw_data_publisher' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/raw_data_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/raw_data_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/raw_data_publisher build --build-base /home/charles/ros2_ws/build/raw_data_publisher/build install --record /home/charles/ros2_ws/build/raw_data_publisher/install.log --single-version-externally-managed
+[5.709s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/raw_data_publisher' for CMake config files
+[5.711s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/raw_data_publisher/lib'
+[5.711s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/raw_data_publisher/bin'
+[5.711s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/raw_data_publisher/lib/pkgconfig/raw_data_publisher.pc'
+[5.712s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/raw_data_publisher/lib/python3.12/site-packages'
+[5.713s] Level 1:colcon.colcon_core.shell:create_environment_hook('raw_data_publisher', 'pythonpath')
+[5.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/raw_data_publisher/share/raw_data_publisher/hook/pythonpath.ps1'
+[5.715s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/charles/ros2_ws/install/raw_data_publisher/share/raw_data_publisher/hook/pythonpath.dsv'
+[5.716s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/raw_data_publisher/share/raw_data_publisher/hook/pythonpath.sh'
+[5.718s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/raw_data_publisher/bin'
+[5.718s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(raw_data_publisher)
+[5.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/raw_data_publisher/share/raw_data_publisher/package.ps1'
+[5.720s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/charles/ros2_ws/install/raw_data_publisher/share/raw_data_publisher/package.dsv'
+[5.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/raw_data_publisher/share/raw_data_publisher/package.sh'
+[5.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/raw_data_publisher/share/raw_data_publisher/package.bash'
+[5.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/raw_data_publisher/share/raw_data_publisher/package.zsh'
+[5.725s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/charles/ros2_ws/install/raw_data_publisher/share/colcon-core/packages/raw_data_publisher)
+[5.751s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/brain' for CMake module files
+[5.752s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/charles/ros2_ws/src/brain' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/brain build --build-base /home/charles/ros2_ws/build/brain/build install --record /home/charles/ros2_ws/build/brain/install.log --single-version-externally-managed install_data
+[5.753s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/brain' for CMake config files
+[5.754s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/brain/lib'
+[5.754s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/brain/bin'
+[5.754s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/brain/lib/pkgconfig/brain.pc'
+[5.755s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/brain/lib/python3.12/site-packages'
+[5.755s] Level 1:colcon.colcon_core.shell:create_environment_hook('brain', 'pythonpath')
+[5.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/brain/share/brain/hook/pythonpath.ps1'
+[5.757s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/charles/ros2_ws/install/brain/share/brain/hook/pythonpath.dsv'
+[5.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/charles/ros2_ws/install/brain/share/brain/hook/pythonpath.sh'
+[5.760s] Level 1:colcon.colcon_core.environment:checking '/home/charles/ros2_ws/install/brain/bin'
+[5.760s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(brain)
+[5.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/brain/share/brain/package.ps1'
+[5.763s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/charles/ros2_ws/install/brain/share/brain/package.dsv'
+[5.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/brain/share/brain/package.sh'
+[5.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/brain/share/brain/package.bash'
+[5.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/charles/ros2_ws/install/brain/share/brain/package.zsh'
+[5.766s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/charles/ros2_ws/install/brain/share/colcon-core/packages/brain)
+[5.767s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.768s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.768s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.768s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.782s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.783s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.783s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.824s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.825s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/charles/ros2_ws/install/local_setup.ps1'
+[5.828s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/charles/ros2_ws/install/_local_setup_util_ps1.py'
+[5.832s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/charles/ros2_ws/install/setup.ps1'
+[5.835s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/charles/ros2_ws/install/local_setup.sh'
+[5.836s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/charles/ros2_ws/install/_local_setup_util_sh.py'
+[5.839s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/charles/ros2_ws/install/setup.sh'
+[5.843s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/charles/ros2_ws/install/local_setup.bash'
+[5.844s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/charles/ros2_ws/install/setup.bash'
+[5.848s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/charles/ros2_ws/install/local_setup.zsh'
+[5.849s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/charles/ros2_ws/install/setup.zsh'

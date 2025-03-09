@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+../../build/joy_publisher/joy_publisher.egg-info/PKG-INFO
+../../build/joy_publisher/joy_publisher.egg-info/SOURCES.txt
+../../build/joy_publisher/joy_publisher.egg-info/dependency_links.txt
+../../build/joy_publisher/joy_publisher.egg-info/requires.txt
+../../build/joy_publisher/joy_publisher.egg-info/top_level.txt
+../../build/joy_publisher/joy_publisher.egg-info/zip-safe
+joy_publisher/__init__.py
+resource/joy_publisher
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

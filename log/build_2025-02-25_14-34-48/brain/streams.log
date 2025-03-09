@@ -1,0 +1,31 @@
+[1.664s] Invoking command in '/home/charles/ros2_ws/build/brain': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/charles/ros2_ws/build/brain/build
+[2.073s] running develop
+[2.350s] Removing /home/charles/ros2_ws/install/brain/lib/python3.12/site-packages/brain.egg-link (link to .)
+[2.402s] Invoked command in '/home/charles/ros2_ws/build/brain' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/charles/ros2_ws/build/brain/build
+[2.404s] Invoking command in '/home/charles/ros2_ws/src/brain': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/brain build --build-base /home/charles/ros2_ws/build/brain/build install --record /home/charles/ros2_ws/build/brain/install.log --single-version-externally-managed install_data --force
+[2.858s] running egg_info
+[2.881s] writing ../../build/brain/brain.egg-info/PKG-INFO
+[2.881s] writing dependency_links to ../../build/brain/brain.egg-info/dependency_links.txt
+[2.881s] writing requirements to ../../build/brain/brain.egg-info/requires.txt
+[2.881s] writing top-level names to ../../build/brain/brain.egg-info/top_level.txt
+[2.930s] reading manifest file '../../build/brain/brain.egg-info/SOURCES.txt'
+[2.931s] writing manifest file '../../build/brain/brain.egg-info/SOURCES.txt'
+[2.931s] running build
+[2.931s] running build_py
+[2.932s] creating /home/charles/ros2_ws/build/brain/build
+[2.932s] creating /home/charles/ros2_ws/build/brain/build/lib
+[2.932s] creating /home/charles/ros2_ws/build/brain/build/lib/brain
+[2.932s] copying brain/__init__.py -> /home/charles/ros2_ws/build/brain/build/lib/brain
+[2.932s] running install
+[2.940s] running install_lib
+[2.964s] creating /home/charles/ros2_ws/install/brain/lib/python3.12/site-packages/brain
+[2.964s] copying /home/charles/ros2_ws/build/brain/build/lib/brain/__init__.py -> /home/charles/ros2_ws/install/brain/lib/python3.12/site-packages/brain
+[2.965s] byte-compiling /home/charles/ros2_ws/install/brain/lib/python3.12/site-packages/brain/__init__.py to __init__.cpython-312.pyc
+[2.965s] running install_data
+[2.966s] copying resource/brain -> /home/charles/ros2_ws/install/brain/share/ament_index/resource_index/packages
+[2.966s] copying package.xml -> /home/charles/ros2_ws/install/brain/share/brain
+[2.966s] running install_egg_info
+[2.991s] Copying ../../build/brain/brain.egg-info to /home/charles/ros2_ws/install/brain/lib/python3.12/site-packages/brain-0.0.0-py3.12.egg-info
+[2.992s] running install_scripts
+[3.180s] writing list of installed files to '/home/charles/ros2_ws/build/brain/install.log'
+[3.240s] Invoked command in '/home/charles/ros2_ws/src/brain' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/brain build --build-base /home/charles/ros2_ws/build/brain/build install --record /home/charles/ros2_ws/build/brain/install.log --single-version-externally-managed install_data --force

@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/depth_processor/depth_processor.egg-info
+writing ../../build/depth_processor/depth_processor.egg-info/PKG-INFO
+writing dependency_links to ../../build/depth_processor/depth_processor.egg-info/dependency_links.txt
+writing entry points to ../../build/depth_processor/depth_processor.egg-info/entry_points.txt
+writing requirements to ../../build/depth_processor/depth_processor.egg-info/requires.txt
+writing top-level names to ../../build/depth_processor/depth_processor.egg-info/top_level.txt
+writing manifest file '../../build/depth_processor/depth_processor.egg-info/SOURCES.txt'
+reading manifest file '../../build/depth_processor/depth_processor.egg-info/SOURCES.txt'
+writing manifest file '../../build/depth_processor/depth_processor.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/charles/ros2_ws/build/depth_processor/build
+creating /home/charles/ros2_ws/build/depth_processor/build/lib
+creating /home/charles/ros2_ws/build/depth_processor/build/lib/depth_processor
+copying depth_processor/__init__.py -> /home/charles/ros2_ws/build/depth_processor/build/lib/depth_processor
+running install
+running install_lib
+creating /home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages/depth_processor
+copying /home/charles/ros2_ws/build/depth_processor/build/lib/depth_processor/__init__.py -> /home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages/depth_processor
+byte-compiling /home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages/depth_processor/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/charles/ros2_ws/install/depth_processor/share/ament_index
+creating /home/charles/ros2_ws/install/depth_processor/share/ament_index/resource_index
+creating /home/charles/ros2_ws/install/depth_processor/share/ament_index/resource_index/packages
+copying resource/depth_processor -> /home/charles/ros2_ws/install/depth_processor/share/ament_index/resource_index/packages
+copying package.xml -> /home/charles/ros2_ws/install/depth_processor/share/depth_processor
+running install_egg_info
+Copying ../../build/depth_processor/depth_processor.egg-info to /home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages/depth_processor-0.0.0-py3.12.egg-info
+running install_scripts
+Installing process_depth script to /home/charles/ros2_ws/install/depth_processor/lib/depth_processor
+writing list of installed files to '/home/charles/ros2_ws/build/depth_processor/install.log'

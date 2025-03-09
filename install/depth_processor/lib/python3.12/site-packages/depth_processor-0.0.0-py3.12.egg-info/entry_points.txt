@@ -1,0 +1,3 @@
+[console_scripts]
+mapping = depth_processor.scripts.mapping:main
+process_depth = depth_processor.scripts.process_depth:main
