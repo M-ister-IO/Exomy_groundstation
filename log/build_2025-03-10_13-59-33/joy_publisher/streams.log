@@ -1,0 +1,19 @@
+[5.163s] Invoking command in '/home/charles/ros2_ws/src/joy_publisher': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/joy_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/joy_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_publisher build --build-base /home/charles/ros2_ws/build/joy_publisher/build install --record /home/charles/ros2_ws/build/joy_publisher/install.log --single-version-externally-managed install_data
+[5.967s] running egg_info
+[6.022s] writing ../../build/joy_publisher/joy_publisher.egg-info/PKG-INFO
+[6.025s] writing dependency_links to ../../build/joy_publisher/joy_publisher.egg-info/dependency_links.txt
+[6.025s] writing requirements to ../../build/joy_publisher/joy_publisher.egg-info/requires.txt
+[6.026s] writing top-level names to ../../build/joy_publisher/joy_publisher.egg-info/top_level.txt
+[6.141s] reading manifest file '../../build/joy_publisher/joy_publisher.egg-info/SOURCES.txt'
+[6.143s] writing manifest file '../../build/joy_publisher/joy_publisher.egg-info/SOURCES.txt'
+[6.144s] running build
+[6.145s] running build_py
+[6.145s] running install
+[6.171s] running install_lib
+[6.231s] running install_data
+[6.232s] running install_egg_info
+[6.305s] removing '/home/charles/ros2_ws/install/joy_publisher/lib/python3.12/site-packages/joy_publisher-0.0.0-py3.12.egg-info' (and everything under it)
+[6.305s] Copying ../../build/joy_publisher/joy_publisher.egg-info to /home/charles/ros2_ws/install/joy_publisher/lib/python3.12/site-packages/joy_publisher-0.0.0-py3.12.egg-info
+[6.307s] running install_scripts
+[6.687s] writing list of installed files to '/home/charles/ros2_ws/build/joy_publisher/install.log'
+[6.792s] Invoked command in '/home/charles/ros2_ws/src/joy_publisher' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/joy_publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/joy_publisher/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_publisher build --build-base /home/charles/ros2_ws/build/joy_publisher/build install --record /home/charles/ros2_ws/build/joy_publisher/install.log --single-version-externally-managed install_data

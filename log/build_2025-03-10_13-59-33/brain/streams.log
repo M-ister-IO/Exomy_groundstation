@@ -1,0 +1,22 @@
+[5.876s] Invoking command in '/home/charles/ros2_ws/src/brain': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/brain build --build-base /home/charles/ros2_ws/build/brain/build install --record /home/charles/ros2_ws/build/brain/install.log --single-version-externally-managed install_data
+[7.010s] running egg_info
+[7.064s] writing ../../build/brain/brain.egg-info/PKG-INFO
+[7.064s] writing dependency_links to ../../build/brain/brain.egg-info/dependency_links.txt
+[7.065s] writing entry points to ../../build/brain/brain.egg-info/entry_points.txt
+[7.066s] writing requirements to ../../build/brain/brain.egg-info/requires.txt
+[7.066s] writing top-level names to ../../build/brain/brain.egg-info/top_level.txt
+[7.179s] reading manifest file '../../build/brain/brain.egg-info/SOURCES.txt'
+[7.181s] writing manifest file '../../build/brain/brain.egg-info/SOURCES.txt'
+[7.182s] running build
+[7.182s] running build_py
+[7.183s] running install
+[7.202s] running install_lib
+[7.263s] running install_data
+[7.263s] running install_egg_info
+[7.322s] removing '/home/charles/ros2_ws/install/brain/lib/python3.12/site-packages/brain-0.0.0-py3.12.egg-info' (and everything under it)
+[7.323s] Copying ../../build/brain/brain.egg-info to /home/charles/ros2_ws/install/brain/lib/python3.12/site-packages/brain-0.0.0-py3.12.egg-info
+[7.326s] running install_scripts
+[7.699s] Installing brain_listener script to /home/charles/ros2_ws/install/brain/lib/brain
+[7.700s] Installing command_listener script to /home/charles/ros2_ws/install/brain/lib/brain
+[7.701s] writing list of installed files to '/home/charles/ros2_ws/build/brain/install.log'
+[7.779s] Invoked command in '/home/charles/ros2_ws/src/brain' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/brain/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/brain build --build-base /home/charles/ros2_ws/build/brain/build install --record /home/charles/ros2_ws/build/brain/install.log --single-version-externally-managed install_data

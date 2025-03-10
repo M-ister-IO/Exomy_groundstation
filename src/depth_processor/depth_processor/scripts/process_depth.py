@@ -18,8 +18,8 @@ class DepthProcessor(Node):
         self.publisher_ = self.create_publisher(PointCloud2, "point_cloud", 10)
         self.header = Header()
         self.header.frame_id = "world"
-        self.width_ = 240
-        self.height_ = 180
+        self.width_ = 240-60
+        self.height_ = 180-60
         self.fx = 192.92
         self.fy = 191.25
 
@@ -41,7 +41,7 @@ class DepthProcessor(Node):
             z = self.depth_data
             z[z <= 0] = np.nan  # Handle invalid depth values
             z[z > 2.1] = np.nan  # Handle invalid depth values
-            z = z.reshape((180, 240))  # Ensure correct shape
+            z = z.reshape((self.height_, self.width_))  # Ensure correct shape
 
             # Generate u and v coordinate grids
             u = np.arange(self.width_)
@@ -87,30 +87,39 @@ class DepthProcessor(Node):
             except tf2_ros.LookupException:
                 self.get_logger().warn("Transform not found, skipping transformation")
 
-            # # Remove points that are too close to each other in the new frame
-            # if len(points) > 0:
-            #     tree = cKDTree(points)
-            #     unique_points = []
-            #     for i, point in enumerate(points):
-            #         # If this is the first point or if the closest point is farther than 0.02 meters
-            #         if i == 0 or np.min(tree.query(point, k=2)[0][1:]) > 0.02:
-            #             unique_points.append(point)
-            #         else:
-            #             # If points are too close, skip adding this point to the list
-            #             continue
-            #     points = np.array(unique_points)
 
-            # # Filter points based on distance to existing points in the global map
-            # if self.points:
-            #     tree = cKDTree(self.points)
-            #     distances, _ = tree.query(points, distance_upper_bound=0.02)
-            #     new_points = points[distances > 0.02]
-            # else:
-            #     new_points = points 
+            # Remove points that are too close to each other in the new frame (using KDTree)
+            if len(points) > 0:
+                tree = cKDTree(points)  # Create KD-Tree from points
+                unique_points = []
+                visited = set()
+
+                for i, point in enumerate(points):
+                    
+                    if i in visited or i%10!=0:
+                        continue  # Skip if already removed
+
+                    unique_points.append(point)
+
+                    # Find all nearby points within 0.01 meters
+                    self.get_logger().info(f"Processing point {i}/{len(points)}")
+                    indices = tree.query_ball_point(point, 0.03)
+                    visited.update(indices)  # Mark them as visited
+
+                points = np.array(unique_points)
+
+            # Filter points based on distance to existing points in the global map
+            if self.points:
+                tree = cKDTree(self.points)
+                distances, _ = tree.query(points, distance_upper_bound=0.03)
+                new_points = points[distances > 0.03]
+            else:
+                new_points = points
+
 
 
             # Add new points to the list
-            self.points.extend(points)
+            self.points.extend(new_points)
 
             # Create and publish PointCloud2 message
             pc2_msg_ = point_cloud2.create_cloud_xyz32(self.header, self.points)
