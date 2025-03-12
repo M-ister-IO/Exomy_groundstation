@@ -1,0 +1,22 @@
+[2.398s] Invoking command in '/home/charles/ros2_ws/src/data_processor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/data_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/data_processor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/data_processor build --build-base /home/charles/ros2_ws/build/data_processor/build install --record /home/charles/ros2_ws/build/data_processor/install.log --single-version-externally-managed install_data
+[2.803s] running egg_info
+[2.831s] writing ../../build/data_processor/data_processor.egg-info/PKG-INFO
+[2.831s] writing dependency_links to ../../build/data_processor/data_processor.egg-info/dependency_links.txt
+[2.831s] writing entry points to ../../build/data_processor/data_processor.egg-info/entry_points.txt
+[2.831s] writing requirements to ../../build/data_processor/data_processor.egg-info/requires.txt
+[2.831s] writing top-level names to ../../build/data_processor/data_processor.egg-info/top_level.txt
+[2.880s] reading manifest file '../../build/data_processor/data_processor.egg-info/SOURCES.txt'
+[2.881s] writing manifest file '../../build/data_processor/data_processor.egg-info/SOURCES.txt'
+[2.881s] running build
+[2.881s] running build_py
+[2.881s] running install
+[2.889s] running install_lib
+[2.916s] running install_data
+[2.916s] running install_egg_info
+[2.949s] removing '/home/charles/ros2_ws/install/data_processor/lib/python3.12/site-packages/data_processor-0.0.0-py3.12.egg-info' (and everything under it)
+[2.949s] Copying ../../build/data_processor/data_processor.egg-info to /home/charles/ros2_ws/install/data_processor/lib/python3.12/site-packages/data_processor-0.0.0-py3.12.egg-info
+[2.950s] running install_scripts
+[3.120s] Installing imu_data_processor script to /home/charles/ros2_ws/install/data_processor/lib/data_processor
+[3.120s] Installing tof_data_processor script to /home/charles/ros2_ws/install/data_processor/lib/data_processor
+[3.121s] writing list of installed files to '/home/charles/ros2_ws/build/data_processor/install.log'
+[3.154s] Invoked command in '/home/charles/ros2_ws/src/data_processor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/charles/ros2_ws/build/data_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/data_processor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/data_processor build --build-base /home/charles/ros2_ws/build/data_processor/build install --record /home/charles/ros2_ws/build/data_processor/install.log --single-version-externally-managed install_data

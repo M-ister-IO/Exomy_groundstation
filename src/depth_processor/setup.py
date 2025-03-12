@@ -21,6 +21,9 @@ setup(
     entry_points={
         'console_scripts': [
             'process_depth = depth_processor.scripts.process_depth:main',
+            'point_cloud_creator1 = depth_processor.scripts.point_cloud_creator1:main',
+            'point_cloud_creator2 = depth_processor.scripts.point_cloud_creator2:main',
+            'global_map = depth_processor.scripts.global_map:main',
             'mapping = depth_processor.scripts.mapping:main',
         ],
     },

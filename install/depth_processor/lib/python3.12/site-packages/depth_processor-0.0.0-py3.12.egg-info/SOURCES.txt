@@ -13,6 +13,10 @@ depth_processor/setup.py
 depth_processor/launch/__init__.py
 depth_processor/launch/depth_processor_launch.py
 depth_processor/scripts/__init__.py
+depth_processor/scripts/global_map.py
+depth_processor/scripts/mesh_from_pointcloud.py
+depth_processor/scripts/point_cloud_creator1.py
+depth_processor/scripts/point_cloud_creator2.py
 depth_processor/scripts/process_depth.py
 resource/depth_processor
 test/test_copyright.py

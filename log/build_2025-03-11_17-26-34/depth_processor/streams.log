@@ -1,0 +1,28 @@
+[2.272s] Invoking command in '/home/charles/ros2_ws/src/depth_processor': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/charles/ros2_ws/build/depth_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/depth_processor build --build-base /home/charles/ros2_ws/build/depth_processor/build install --record /home/charles/ros2_ws/build/depth_processor/install.log --single-version-externally-managed install_data
+[2.906s] running egg_info
+[2.952s] writing ../../build/depth_processor/depth_processor.egg-info/PKG-INFO
+[2.954s] writing dependency_links to ../../build/depth_processor/depth_processor.egg-info/dependency_links.txt
+[2.954s] writing entry points to ../../build/depth_processor/depth_processor.egg-info/entry_points.txt
+[2.955s] writing requirements to ../../build/depth_processor/depth_processor.egg-info/requires.txt
+[2.955s] writing top-level names to ../../build/depth_processor/depth_processor.egg-info/top_level.txt
+[3.051s] reading manifest file '../../build/depth_processor/depth_processor.egg-info/SOURCES.txt'
+[3.053s] writing manifest file '../../build/depth_processor/depth_processor.egg-info/SOURCES.txt'
+[3.053s] running build
+[3.053s] running build_py
+[3.053s] copying depth_processor/scripts/mesh_from_pointcloud.py -> /home/charles/ros2_ws/build/depth_processor/build/lib/depth_processor/scripts
+[3.054s] copying depth_processor/scripts/process_depth.py -> /home/charles/ros2_ws/build/depth_processor/build/lib/depth_processor/scripts
+[3.055s] running install
+[3.071s] running install_lib
+[3.119s] copying /home/charles/ros2_ws/build/depth_processor/build/lib/depth_processor/scripts/mesh_from_pointcloud.py -> /home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages/depth_processor/scripts
+[3.122s] copying /home/charles/ros2_ws/build/depth_processor/build/lib/depth_processor/scripts/process_depth.py -> /home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages/depth_processor/scripts
+[3.123s] byte-compiling /home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages/depth_processor/scripts/mesh_from_pointcloud.py to mesh_from_pointcloud.cpython-312.pyc
+[3.126s] byte-compiling /home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages/depth_processor/scripts/process_depth.py to process_depth.cpython-312.pyc
+[3.129s] running install_data
+[3.131s] running install_egg_info
+[3.180s] removing '/home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages/depth_processor-0.0.0-py3.12.egg-info' (and everything under it)
+[3.180s] Copying ../../build/depth_processor/depth_processor.egg-info to /home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages/depth_processor-0.0.0-py3.12.egg-info
+[3.182s] running install_scripts
+[3.383s] Installing mapping script to /home/charles/ros2_ws/install/depth_processor/lib/depth_processor
+[3.383s] Installing process_depth script to /home/charles/ros2_ws/install/depth_processor/lib/depth_processor
+[3.383s] writing list of installed files to '/home/charles/ros2_ws/build/depth_processor/install.log'
+[3.413s] Invoked command in '/home/charles/ros2_ws/src/depth_processor' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/charles/ros2_ws/build/depth_processor/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/charles/ros2_ws/install/depth_processor/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/depth_processor build --build-base /home/charles/ros2_ws/build/depth_processor/build install --record /home/charles/ros2_ws/build/depth_processor/install.log --single-version-externally-managed install_data
