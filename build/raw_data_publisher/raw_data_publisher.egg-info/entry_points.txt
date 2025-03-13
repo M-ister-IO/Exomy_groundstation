@@ -1,3 +1,0 @@
-[console_scripts]
-imu_publisher = raw_data_publisher.scripts.imu_publisher:main
-tof_publisher = raw_data_publisher.scripts.tof_publisher:main
