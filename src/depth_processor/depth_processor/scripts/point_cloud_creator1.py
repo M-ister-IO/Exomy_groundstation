@@ -62,6 +62,7 @@ class PointCloudCreator(Node):
         self.get_logger().info("Point cloud published")
 
     def transform_points(self, points):
+        print("original point: " + str(points[0]))
         try:
             transform = self.tf_buffer.lookup_transform('world', 'imu_link', rclpy.time.Time())
             transformed_points = []
@@ -71,6 +72,7 @@ class PointCloudCreator(Node):
                 point_stamped.point.x, point_stamped.point.y, point_stamped.point.z = point
                 transformed_point = tf2_geometry_msgs.do_transform_point(point_stamped, transform)
                 transformed_points.append([transformed_point.point.x, transformed_point.point.y, transformed_point.point.z])
+            print("transformed point: " + str(transformed_points[0]))
             return np.array(transformed_points)
         except tf2_ros.LookupException:
             self.get_logger().warn("Transform not found, skipping transformation")
@@ -79,9 +81,12 @@ class PointCloudCreator(Node):
     def filter_points(self, points):
         if not self.points:
             return points.tolist()
-        tree = cKDTree(self.points)
-        distances, _ = tree.query(points, distance_upper_bound=0.03)
-        return points[distances > 0.03].tolist()
+        try:
+            tree = cKDTree(self.points)
+            distances, _ = tree.query(points, distance_upper_bound=0.02)
+            return points[distances > 0.02].tolist()
+        except:
+            return points.tolist()
 
 
     def save_pcd(self):
@@ -89,7 +94,7 @@ class PointCloudCreator(Node):
 
         # Generate timestamped filename
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        filename_npy = f"/home/charles/ros2_ws/src/depth_processor/depth_processor/scripts/pointclouds/pointcloud1_{timestamp}.npy"
+        filename_npy = f"/home/claudio/Exomy_groundstation/src/depth_processor/depth_processor/scripts/pointclouds/pointcloud1_{timestamp}.npy"
 
         # Convert PointCloud2 to numpy array
         cloud_array = self.pointcloud2_to_xyz(self.pc2_msg)

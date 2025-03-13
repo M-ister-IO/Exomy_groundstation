@@ -25,10 +25,9 @@ sh run_exomy.sh -a
 ### Terminal 2 (ExoMy ssh)
 After the docker is created you can start `joy_publisher`:
 ```sh
-# Get the container ID for ExoMy
+# Get the container name for ExoMy (should be exomy_autostart)
 docker ps
-# Replace <ID> with the actual container ID
-docker exec -it <ID> bash
+docker exec -it exomy_autostart bash
 source exomy_ws/install/setup.sh
 ```
 Prepare this line of code but don't run it:
@@ -39,8 +38,7 @@ ros2 run joy_publisher joy_publisher
 ### Terminal 3 (ExoMy ssh)
 Prepare `position_calculator`:
 ```sh
-# Replace <ID> with the actual container ID
-docker exec -it <ID> bash
+docker exec -it exomy_autostart bash
 source exomy_ws/install/setup.sh
 ```
 Prepare this line of code but don't run it:

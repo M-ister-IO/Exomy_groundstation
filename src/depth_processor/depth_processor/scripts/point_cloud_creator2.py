@@ -16,7 +16,7 @@ class PointCloudCreator(Node):
     def __init__(self):
         super().__init__("pointcloud_creator1")
         self.points = []
-        self.depth_sub = self.create_subscription(Float32MultiArray, "raw_depth", self.depth_callback, 1)
+        self.depth_sub = self.create_subscription(Float32MultiArray, "raw_depth2", self.depth_callback, 1)
         self.publisher_ = self.create_publisher(PointCloud2, "point_cloud2", 10)
         self.header = Header()
         self.header.frame_id = "world"
@@ -51,7 +51,7 @@ class PointCloudCreator(Node):
 
         # Apply rotation
         points = (R_x @ points.T).T  # Rotate points
-        points = points + [0,3.0,0.355]
+        points = points + [1.2,-0.3,0.28]
 
         transformed_points = self.transform_points(points)
         unique_points = self.filter_points(transformed_points)
@@ -63,7 +63,7 @@ class PointCloudCreator(Node):
 
     def transform_points(self, points):
         try:
-            transform = self.tf_buffer.lookup_transform('world', 'imu_link', rclpy.time.Time())
+            transform = self.tf_buffer.lookup_transform('world', 'world', rclpy.time.Time())
             transformed_points = []
             for point in points:
                 point_stamped = PointStamped()
@@ -79,16 +79,19 @@ class PointCloudCreator(Node):
     def filter_points(self, points):
         if not self.points:
             return points.tolist()
-        tree = cKDTree(self.points)
-        distances, _ = tree.query(points, distance_upper_bound=0.03)
-        return points[distances > 0.03].tolist()
+        try:
+            tree = cKDTree(self.points)
+            distances, _ = tree.query(points, distance_upper_bound=0.01)
+            return points[distances > 0.01].tolist()
+        except:
+            return points.tolist()
 
     def save_pcd(self):
         self.get_logger().info("Received PointCloud2 message")
 
         # Generate timestamped filename
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        filename_npy = f"/home/charles/ros2_ws/src/depth_processor/depth_processor/scripts/pointclouds/pointcloud2_{timestamp}.npy"
+        filename_npy = f"/home/claudio/Exomy_groundstation/src/depth_processor/depth_processor/scripts/pointclouds/pointcloud2_{timestamp}.npy"
 
         # Convert PointCloud2 to numpy array
         cloud_array = self.pointcloud2_to_xyz(self.pc2_msg)

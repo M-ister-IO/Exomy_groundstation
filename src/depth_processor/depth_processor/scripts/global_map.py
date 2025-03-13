@@ -37,10 +37,14 @@ class GlobalPointCloudMapper(Node):
         if len(self.global_points) == 0:
             self.global_points = new_points.tolist()
         else:
-            tree = cKDTree(self.global_points)
-            distances, _ = tree.query(new_points, distance_upper_bound=0.03)
-            unique_points = new_points[distances > 0.03].tolist()
-            self.global_points.extend(unique_points)
+            try: 
+                tree = cKDTree(self.global_points)
+                distances, _ = tree.query(new_points, distance_upper_bound=0.03)
+                unique_points = new_points[distances > 0.03].tolist()
+                self.global_points.extend(unique_points)
+            except:
+                pass
+            
         
         self.pc2_msg = point_cloud2.create_cloud_xyz32(self.header, self.global_points)
         self.publisher_.publish(self.pc2_msg)
@@ -51,7 +55,7 @@ class GlobalPointCloudMapper(Node):
 
         # Generate timestamped filename
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        filename_npy = f"/home/charles/ros2_ws/src/depth_processor/depth_processor/scripts/pointclouds/global_pointcloud_{timestamp}.npy"
+        filename_npy = f"/home/claudio/Exomy_groundstation/src/depth_processor/depth_processor/scripts/pointclouds/global_pointcloud_{timestamp}.npy"
 
         # Convert PointCloud2 to numpy array
         cloud_array = self.pointcloud2_to_xyz(self.pc2_msg)
