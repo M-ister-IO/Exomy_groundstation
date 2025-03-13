@@ -1,0 +1,23 @@
+# Exclude all log files
+*.log
+
+# Exclude all Python compiled bytecode files
+*.pyc
+
+# Exclude all numpy files
+*.npy
+
+# Exclude Python cache directories
+__pycache__/
+
+# Exclude virtual environment folders
+venv/
+env/
+ENV/
+
+# Exclude build and distribution directories
+build/
+dist/
+
+# Exclude VS Code specific settings
+.vscode/
