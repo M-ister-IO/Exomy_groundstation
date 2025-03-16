@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<robot name="custom_robot">
+
+  <!-- Base link: a box 10cm (x) x 5cm (y) x 2cm (z) -->
+  <link name="base_link">
+    <visual>
+      <!-- Shifted so the frame is at the bottom face -->
+      <origin xyz="0 0 0.01" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.10 0.05 0.02"/>
+      </geometry>
+      <material name="base_gray">
+        <color rgba="0.7 0.7 0.7 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Vertical rod (first segment): a cylinder 5cm high -->
+  <link name="rod_vertical">
+    <visual>
+      <!-- Shifted by half the cylinder height -->
+      <origin xyz="0 0 0.025" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.005" length="0.05"/>
+      </geometry>
+      <material name="vertical_red">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Angled rod (second segment): a cylinder 5cm long -->
+  <link name="rod_angled">
+    <visual>
+      <!-- Shifted by half the cylinder length -->
+      <origin xyz="0 0 0.025" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.005" length="0.05"/>
+      </geometry>
+      <material name="angled_blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Fixed joint from base_link to rod_vertical -->
+  <joint name="base_to_vertical" type="fixed">
+    <parent link="base_link"/>
+    <child link="rod_vertical"/>
+    <!-- Joint origin at 1cm along the x and at the top of the base -->
+    <origin xyz="0.01 0 0.02" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Fixed joint from rod_vertical to rod_angled -->
+  <joint name="vertical_to_angled" type="fixed">
+    <parent link="rod_vertical"/>
+    <child link="rod_angled"/>
+    <!-- Joint located at the top of the vertical rod with a -45° rotation about the y-axis -->
+    <origin xyz="0 0 0.05" rpy="0 -0.7854 0"/>
+  </joint>
+
+</robot>
+``` 
+
+You can adjust the colors by modifying the RGBA values if needed.<!-- filepath: /home/claudio/Exomy_groundstation/src/fakexomy_bringup/r2d2.urdf -->
+<?xml version="1.0"?>
+<robot name="custom_robot">
+
+  <!-- Base link: a box 10cm (x) x 5cm (y) x 2cm (z) -->
+  <link name="base_link">
+    <visual>
+      <!-- Shifted so the frame is at the bottom face -->
+      <origin xyz="0 0 0.01" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.10 0.05 0.02"/>
+      </geometry>
+      <material name="base_gray">
+        <color rgba="0.7 0.7 0.7 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Vertical rod (first segment): a cylinder 5cm high -->
+  <link name="rod_vertical">
+    <visual>
+      <!-- Shifted by half the cylinder height -->
+      <origin xyz="0 0 0.025" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.005" length="0.05"/>
+      </geometry>
+      <material name="vertical_red">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Angled rod (second segment): a cylinder 5cm long -->
+  <link name="rod_angled">
+    <visual>
+      <!-- Shifted by half the cylinder length -->
+      <origin xyz="0 0 0.025" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.005" length="0.05"/>
+      </geometry>
+      <material name="angled_blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Fixed joint from base_link to rod_vertical -->
+  <joint name="base_to_vertical" type="fixed">
+    <parent link="base_link"/>
+    <child link="rod_vertical"/>
+    <!-- Joint origin at 1cm along the x and at the top of the base -->
+    <origin xyz="0.01 0 0.02" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Fixed joint from rod_vertical to rod_angled -->
+  <joint name="vertical_to_angled" type="fixed">
+    <parent link="rod_vertical"/>
+    <child link="rod_angled"/>
+    <!-- Joint located at the top of the vertical rod with a -45° rotation about the y-axis -->
+    <origin xyz="0 0 0.05" rpy="0 -0.7854 0"/>
+  </joint>
+
+</robot>

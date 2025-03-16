@@ -1,3 +1,4 @@
+import os
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import PointCloud2
@@ -27,6 +28,9 @@ class PointCloudCreator(Node):
         
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
+
+        # Frequency of point cloud publishing
+        self.timer = self.create_timer(1, self.timer_callback)
         
         self.get_logger().info("PointCloudCreator1 initialized")
 
@@ -91,7 +95,9 @@ class PointCloudCreator(Node):
 
         # Generate timestamped filename
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        filename_npy = f"/home/claudio/Exomy_groundstation/src/depth_processor/depth_processor/scripts/pointclouds/pointcloud2_{timestamp}.npy"
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        exomy_root = os.path.abspath(os.path.join(current_dir, '..', '..', '..', '..'))
+        filename_npy = os.path.join(exomy_root, "src", "depth_processor", "depth_processor", "scripts", "pointclouds", f"pointcloud2_{timestamp}.npy")
 
         # Convert PointCloud2 to numpy array
         cloud_array = self.pointcloud2_to_xyz(self.pc2_msg)
@@ -194,6 +200,13 @@ class PointCloudCreator(Node):
             plt.show()
         else:
             plt.savefig(filename, bbox_inches='tight')
+
+    def timer_callback(self):
+        # Publish point cloud at a fixed rate
+        if hasattr(self, 'pc2_msg'):
+            self.publisher_.publish(self.pc2_msg)
+            self.get_logger().info("Point cloud published by timer")
+            current_dir = os.path.dirname(os.path.abspath(__file__))
 
 def main(args=None):
     rclpy.init(args=args)

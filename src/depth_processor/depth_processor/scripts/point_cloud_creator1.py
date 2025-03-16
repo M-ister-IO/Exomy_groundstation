@@ -11,6 +11,7 @@ from scipy.spatial import cKDTree
 from datetime import datetime
 import struct
 from matplotlib import pyplot as plt
+import os
 
 class PointCloudCreator(Node):
     def __init__(self):
@@ -92,9 +93,11 @@ class PointCloudCreator(Node):
     def save_pcd(self):
         self.get_logger().info("Received PointCloud2 message")
 
-        # Generate timestamped filename
+        # Generate timestamped filename using a relative path
         timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        filename_npy = f"/home/claudio/Exomy_groundstation/src/depth_processor/depth_processor/scripts/pointclouds/pointcloud1_{timestamp}.npy"
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        exomy_root = os.path.abspath(os.path.join(current_dir, '..', '..', '..', '..'))
+        filename_npy = os.path.join(exomy_root, "src", "depth_processor", "depth_processor", "scripts", "pointclouds", f"pointcloud1_{timestamp}.npy")
 
         # Convert PointCloud2 to numpy array
         cloud_array = self.pointcloud2_to_xyz(self.pc2_msg)
@@ -102,8 +105,8 @@ class PointCloudCreator(Node):
         # Save as .npy for fast loading
         np.save(filename_npy, cloud_array)
         self.get_logger().info(f"Saved pointcloud as {filename_npy}")
-        self.plot_vertices(cloud_array,isosurf=True)
-        self.plot_vertices2(cloud_array,isosurf=True)
+        self.plot_vertices(cloud_array, isosurf=True)
+        self.plot_vertices2(cloud_array, isosurf=True)
 
 
     def pointcloud2_to_xyz(self, cloud_msg):

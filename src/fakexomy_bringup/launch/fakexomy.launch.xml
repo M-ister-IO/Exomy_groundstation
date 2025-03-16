@@ -1,0 +1,13 @@
+<launch>
+    <!-- Launch point cloud node -->
+    <node pkg="depth_processor" exec="point_cloud_creator2" name="point_cloud_creator2" />
+
+    <!-- Launch robot_state_publisher to publish the URDF's TFs -->
+    <node pkg="robot_state_publisher" exec="robot_state_publisher" name="robot_state_publisher" output="screen">
+        <args="robot_description /home/claudio/Exomy_groundstation/src/fakexomy_bringup/r2d2.urdf)" />
+    </node>
+
+    <!-- Launch RViz2 -->
+    <node pkg="rviz2" exec="rviz2" name="rviz2" output="screen" 
+          args="-d /home/claudio/Exomy_groundstation/src/fakexomy_bringup/core.rviz"/>
+</launch>
