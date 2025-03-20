@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<robot name="fakexomy">
+
+  <material name="base_gray">
+    <color rgba="0.7 0.7 0.7 1"/>
+  </material>
+
+  <material name="vertical_red">
+    <color rgba="0.5 0 0 1"/>
+  </material>
+
+  <material name="angled_blue">
+    <color rgba="0 0 1 1"/>
+  </material>
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0.01" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.10 0.05 0.02"/>
+      </geometry>
+      <material name="base_gray"/>
+    </visual>
+  </link>
+
+  <link name="rod_vertical">
+    <visual>
+      <origin xyz="0 0 0.025" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.01" length="0.05"/>
+      </geometry>
+      <material name="vertical_red"/>
+    </visual>
+  </link>
+
+  <link name="rod_angled">
+    <visual>
+      <origin xyz="0 0 0.025" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.01" length="0.05"/>
+      </geometry>
+      <material name="angled_blue"/>
+    </visual>
+  </link>
+
+  <joint name="base_to_vertical" type="fixed">
+    <parent link="base_link"/>
+    <child link="rod_vertical"/>
+    <origin xyz="0.03 0 0.02" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="vertical_to_angled" type="fixed">
+    <parent link="rod_vertical"/>
+    <child link="rod_angled"/>
+    <origin xyz="0 0 0.05" rpy="0 +0.7854 0"/>
+  </joint>
+
+</robot>

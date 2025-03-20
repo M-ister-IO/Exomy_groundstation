@@ -49,13 +49,20 @@ class PointCloudCreator(Node):
         y = (v - self.height_ / 2) * z / self.fy
         points = np.stack((x, y, z), axis=-1)
         points = points[~np.isnan(points).any(axis=-1)]
-        R_x = np.array([[1,  0,  0], 
-                            [0,  np.cos(np.radians(-90-45)), -np.sin(np.radians(-90-45))], 
-                            [0,  np.sin(np.radians(-90-45)),  np.cos(np.radians(-90-45))]])
+        R_x = np.array([[1, 0, 0],
+                        [0, np.cos(np.radians(2.5-90)), -np.sin(np.radians(2.5-90))],
+                        [0, np.sin(np.radians(2.5-90)),  np.cos(np.radians(2.5-90))]])
+        R_z = np.array([[np.cos(np.radians(30)), -np.sin(np.radians(30)), 0],
+                        [np.sin(np.radians(30)),  np.cos(np.radians(30)), 0],
+                        [0,                     0,                    1]])
+        R = R_z @ R_x  # Combine the rotations
+        
+        # Purge points with z value less than 15cm in the camera frame
+        points = points[points[:, 2] >= 0.15]
 
-        # Apply rotation
-        points = (R_x @ points.T).T  # Rotate points
-        points = points + [1.2,-0.3,0.28]
+        # Apply rotation and the new translation
+        points = (R @ points.T).T
+        points = points + [1.2, 1.2, 0.04]
 
         transformed_points = self.transform_points(points)
         unique_points = self.filter_points(transformed_points)
@@ -221,3 +228,5 @@ def main(args=None):
 
 if __name__ == "__main__":
     main()
+
+

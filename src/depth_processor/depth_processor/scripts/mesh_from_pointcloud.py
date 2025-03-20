@@ -125,7 +125,7 @@ def create_raw_mesh(vertices, alpha=0.02, filename=None):
 
 if __name__ == "__main__":
     #generate_mesh()
-    vertices = np.load("/home/claudio/Exomy_groundstation/src/depth_processor/depth_processor/scripts/pointclouds/pointcloud2_2025-03-13_16-58-17.npy")
+    vertices = np.load("/home/claudio/Exomy_groundstation/src/depth_processor/depth_processor/scripts/pointclouds/global_pointcloud_2025-03-12_12-39-26.npy")
     plot_smoothed_vertices(vertices, isosurf=True)
     #create_colored_mesh(vertices, method="bpa")
     #create_raw_mesh(vertices, alpha=0.2)
